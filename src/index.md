@@ -1,7 +1,7 @@
 ---
 layout: home
 hero:
-  name: Zcy's blog
+  name: Zcy's Blog
   text: 个人学习记录的博客
   tagline: Web前端技术博客，积跬步以至千里，致敬每个爱学习的你。
   image:

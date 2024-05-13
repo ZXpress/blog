@@ -11,7 +11,7 @@ export default {
   // 主题相关配置
   themeConfig: {
     logo: '/logo.png',
-    siteTitle: "Zcy's blog",
+    siteTitle: "Zcy's Blog",
     search: {
       provider: 'local'
     },
