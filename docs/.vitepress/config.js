@@ -5,7 +5,8 @@ export default {
   description: 'Vite & Vue powered static site generator.',
   srcDir: '../src', // 相对于项目根目录的 markdown 文件所在的文件夹
   outDir: '../dist', // 输出目录
-  base: './',
+  base: '/',
+  cleanUrls: true,
 
   // 主题相关配置
   themeConfig: {
