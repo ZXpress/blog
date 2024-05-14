@@ -2,6 +2,7 @@
 export default {
   lang: 'en-US',
   title: 'blog',
+  head: [['link', { rel: 'icon', href: '/public/study.png' }]],
   description: 'Vite & Vue powered static site generator.',
   srcDir: '../src', // 相对于项目根目录的 markdown 文件所在的文件夹
   outDir: '../dist', // 输出目录
@@ -36,12 +37,13 @@ export default {
       },
       { text: 'JS', ariaLabel: 'JS', items: [{ text: 'JS', link: '/notes/js/js' }] },
       {
-        text: 'Vue2与Vue3技巧',
+        text: 'Vue',
         ariaLabel: 'VUE',
         items: [
           { text: '自定义指令', link: '/notes/skills/directives' },
           { text: 'toRef', link: '/notes/skills/toRef' },
-          { text: 'expose', link: '/notes/skills/expose' }
+          { text: 'expose', link: '/notes/skills/expose' },
+          { text: 'vFor', link: '/notes/skills/vFor' }
         ]
       },
       {
@@ -63,7 +65,7 @@ export default {
           }
         ]
       },
-      { text: 'Gitee', link: 'https://gitee.com/' },
+      { text: 'GitHub', link: 'https://github.com/ZXpress/blog' },
       { text: '关于我', link: '/aboutme' }
     ],
     sidebar: {
@@ -98,11 +100,12 @@ export default {
       ],
       '/notes/skills/': [
         {
-          text: 'Vue2与Vue3技巧',
+          text: 'Vue',
           items: [
             { text: '自定义指令', link: '/notes/skills/directives' },
             { text: 'toRef', link: '/notes/skills/toRef' },
-            { text: 'expose', link: '/notes/skills/expose' }
+            { text: 'expose', link: '/notes/skills/expose' },
+            { text: 'vFor', link: '/notes/skills/vFor' }
           ]
         }
       ]
