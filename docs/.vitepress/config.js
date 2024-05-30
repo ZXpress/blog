@@ -2,7 +2,6 @@
 export default {
   lang: 'en-US',
   title: 'blog',
-  head: [['link', { rel: 'icon', href: '/public/study.png' }]],
   description: 'Vite & Vue powered static site generator.',
   srcDir: '../src', // 相对于项目根目录的 markdown 文件所在的文件夹
   outDir: '../dist', // 输出目录
@@ -43,7 +42,9 @@ export default {
           { text: '自定义指令', link: '/notes/skills/directives' },
           { text: 'toRef', link: '/notes/skills/toRef' },
           { text: 'expose', link: '/notes/skills/expose' },
-          { text: 'vFor', link: '/notes/skills/vFor' }
+          { text: 'vFor', link: '/notes/skills/vFor' },
+          { text: 'vue2和vue3挂载全局方法', link: '/notes/skills/prototype' },
+          { text: 'watch 和 watchEffect', link: '/notes/skills/watch/watch' }
         ]
       },
       {
@@ -105,7 +106,17 @@ export default {
             { text: '自定义指令', link: '/notes/skills/directives' },
             { text: 'toRef', link: '/notes/skills/toRef' },
             { text: 'expose', link: '/notes/skills/expose' },
-            { text: 'vFor', link: '/notes/skills/vFor' }
+            { text: 'vFor', link: '/notes/skills/vFor' },
+            { text: 'vue2和vue3挂载全局方法', link: '/notes/skills/prototype' },
+            {
+              text: 'watch 和 watchEffect',
+              // link: '/notes/skills/watch',
+              items: [
+                { text: 'watch', link: '/notes/skills/watch/watch' },
+                { text: 'watchEffect', link: '/notes/skills/watch/watchEffect' },
+                { text: 'watch和watchEffect区别', link: '/notes/skills/watch/difference' }
+              ]
+            }
           ]
         }
       ]
