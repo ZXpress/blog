@@ -39,12 +39,24 @@ export default {
         text: 'Vue',
         ariaLabel: 'VUE',
         items: [
-          { text: '自定义指令', link: '/notes/skills/directives' },
-          { text: 'toRef', link: '/notes/skills/toRef' },
-          { text: 'expose', link: '/notes/skills/expose' },
-          { text: 'vFor', link: '/notes/skills/vFor' },
-          { text: 'vue2和vue3挂载全局方法', link: '/notes/skills/prototype' },
-          { text: 'watch 和 watchEffect', link: '/notes/skills/watch/watch' }
+          { text: '自定义指令', link: '/notes/vue/directives' },
+          { text: 'toRef', link: '/notes/vue/toRef' },
+          { text: 'expose', link: '/notes/vue/expose' },
+          { text: 'vFor', link: '/notes/vue/vFor' },
+          { text: 'vue2和vue3挂载全局方法', link: '/notes/vue/prototype' },
+          { text: 'watch 和 watchEffect', link: '/notes/vue/watch/watch' },
+          { text: 'vPre', link: '/notes/vue/vPre' },
+          { text: 'vMemo', link: '/notes/vue/vMemo' }
+        ]
+      },
+      {
+        text: 'React',
+        ariaLabel: 'React',
+        items: [
+          { text: 'memo', link: '/notes/react/hooks/memo' },
+          { text: 'useCallBack', link: '/notes/react/hooks/useCallBack' },
+          { text: 'forwardRef和useImperativeHandle', link: '/notes/react/forwardRefAndUseImperativeHandle.md' },
+          { text: '类组件生命周期', link: '/notes/react/classLifeCycle.md' }
         ]
       },
       {
@@ -99,24 +111,38 @@ export default {
           items: [{ text: 'JS', link: '/notes/js/js' }]
         }
       ],
-      '/notes/skills/': [
+      '/notes/vue/': [
         {
           text: 'Vue',
           items: [
-            { text: '自定义指令', link: '/notes/skills/directives' },
-            { text: 'toRef', link: '/notes/skills/toRef' },
-            { text: 'expose', link: '/notes/skills/expose' },
-            { text: 'vFor', link: '/notes/skills/vFor' },
-            { text: 'vue2和vue3挂载全局方法', link: '/notes/skills/prototype' },
+            { text: '自定义指令', link: '/notes/vue/directives' },
+            { text: 'toRef', link: '/notes/vue/toRef' },
+            { text: 'expose', link: '/notes/vue/expose' },
+            { text: 'vFor', link: '/notes/vue/vFor' },
+            { text: 'vue2和vue3挂载全局方法', link: '/notes/vue/prototype' },
             {
               text: 'watch 和 watchEffect',
-              // link: '/notes/skills/watch',
+              // link: '/notes/vue/watch',
               items: [
-                { text: 'watch', link: '/notes/skills/watch/watch' },
-                { text: 'watchEffect', link: '/notes/skills/watch/watchEffect' },
-                { text: 'watch和watchEffect区别', link: '/notes/skills/watch/difference' }
+                { text: 'watch', link: '/notes/vue/watch/watch' },
+                { text: 'watchEffect', link: '/notes/vue/watch/watchEffect' },
+                { text: 'watch和watchEffect区别', link: '/notes/vue/watch/difference' }
               ]
-            }
+            },
+            { text: 'vPre', link: '/notes/vue/vPre' },
+            { text: 'vMemo', link: '/notes/vue/vMemo' }
+          ]
+        }
+      ],
+      '/notes/react/': [
+        {
+          text: 'React',
+          ariaLabel: 'React',
+          items: [
+            { text: 'memo', link: '/notes/react/hooks/memo' },
+            { text: 'useCallBack', link: '/notes/react/hooks/useCallBack' },
+            { text: 'forwardRef和useImperativeHandle', link: '/notes/react/forwardRefAndUseImperativeHandle.md' },
+            { text: '类组件生命周期', link: '/notes/react/classLifeCycle.md' }
           ]
         }
       ]

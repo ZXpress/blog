@@ -46,6 +46,7 @@ const vFocus = {
 .input {
   border: 1px solid #ccc;
   border-radius: 5px;
+  padding-left: 5px
 }
 </style>
 
