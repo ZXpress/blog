@@ -53,10 +53,12 @@ export default {
         text: 'React',
         ariaLabel: 'React',
         items: [
-          { text: 'memo', link: '/notes/react/hooks/memo' },
-          { text: 'useCallBack', link: '/notes/react/hooks/useCallBack' },
+          { text: 'memo', link: '/notes/react/memo' },
           { text: 'forwardRef和useImperativeHandle', link: '/notes/react/forwardRefAndUseImperativeHandle.md' },
-          { text: '类组件生命周期', link: '/notes/react/classLifeCycle.md' }
+          { text: '类组件生命周期', link: '/notes/react/classLifeCycle.md' },
+          { text: 'zustand', link: '/notes/react/zustand.md' },
+          { text: 'hooks', link: '/notes/react/hooks/useCallBack.md' },
+          { text: 'react搭配ts', link: '/notes/react/ts/useState.md' }
         ]
       },
       {
@@ -139,10 +141,25 @@ export default {
           text: 'React',
           ariaLabel: 'React',
           items: [
-            { text: 'memo', link: '/notes/react/hooks/memo' },
-            { text: 'useCallBack', link: '/notes/react/hooks/useCallBack' },
+            { text: 'memo', link: '/notes/react/memo' },
             { text: 'forwardRef和useImperativeHandle', link: '/notes/react/forwardRefAndUseImperativeHandle.md' },
-            { text: '类组件生命周期', link: '/notes/react/classLifeCycle.md' }
+            { text: '类组件生命周期', link: '/notes/react/classLifeCycle.md' },
+            { text: 'zustand', link: '/notes/react/zustand.md' },
+            {
+              text: 'hooks',
+              items: [
+                { text: 'useCallBack', link: '/notes/react/hooks/useCallBack.md' },
+                { text: 'useMemo', link: '/notes/react/hooks/useMemo.md' },
+                { text: 'useReducer', link: '/notes/react/hooks/useReducer.md' }
+              ]
+            },
+            {
+              text: 'react搭配ts',
+              items: [
+                { text: 'useState', link: '/notes/react/ts/useState.md' },
+                { text: 'useRef', link: '/notes/react/ts/useRef.md' }
+              ]
+            }
           ]
         }
       ]
