@@ -157,7 +157,8 @@ export default {
               text: 'react搭配ts',
               items: [
                 { text: 'useState', link: '/notes/react/ts/useState.md' },
-                { text: 'useRef', link: '/notes/react/ts/useRef.md' }
+                { text: 'useRef', link: '/notes/react/ts/useRef.md' },
+                { text: '组件和ts', link: '/notes/react/ts/components-ts.md' }
               ]
             }
           ]
