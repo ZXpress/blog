@@ -46,7 +46,9 @@ export default {
           { text: 'vue2和vue3挂载全局方法', link: '/notes/vue/prototype' },
           { text: 'watch 和 watchEffect', link: '/notes/vue/watch/watch' },
           { text: 'vPre', link: '/notes/vue/vPre' },
-          { text: 'vMemo', link: '/notes/vue/vMemo' }
+          { text: 'vMemo', link: '/notes/vue/vMemo' },
+          { text: 'errorHandler', link: '/notes/vue/errorHandler' },
+          { text: 'defineAsyncComponent', link: '/notes/vue/defineAsyncComponent' }
         ]
       },
       {
@@ -57,6 +59,7 @@ export default {
           { text: 'forwardRef和useImperativeHandle', link: '/notes/react/forwardRefAndUseImperativeHandle.md' },
           { text: '类组件生命周期', link: '/notes/react/classLifeCycle.md' },
           { text: 'zustand', link: '/notes/react/zustand.md' },
+          { text: 'createElement和CloneElement', link: '/notes/react/createElementAndCloneElement.md' },
           { text: 'hooks', link: '/notes/react/hooks/useCallBack.md' },
           { text: 'react搭配ts', link: '/notes/react/ts/useState.md' }
         ]
@@ -132,7 +135,9 @@ export default {
               ]
             },
             { text: 'vPre', link: '/notes/vue/vPre' },
-            { text: 'vMemo', link: '/notes/vue/vMemo' }
+            { text: 'vMemo', link: '/notes/vue/vMemo' },
+            { text: 'errorHandler', link: '/notes/vue/errorHandler' },
+            { text: 'defineAsyncComponent', link: '/notes/vue/defineAsyncComponent' }
           ]
         }
       ],
@@ -145,6 +150,7 @@ export default {
             { text: 'forwardRef和useImperativeHandle', link: '/notes/react/forwardRefAndUseImperativeHandle.md' },
             { text: '类组件生命周期', link: '/notes/react/classLifeCycle.md' },
             { text: 'zustand', link: '/notes/react/zustand.md' },
+            { text: 'createElement和CloneElement', link: '/notes/react/createElementAndCloneElement.md' },
             {
               text: 'hooks',
               items: [
