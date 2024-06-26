@@ -48,7 +48,11 @@ export default {
           { text: 'vPre', link: '/notes/vue/vPre' },
           { text: 'vMemo', link: '/notes/vue/vMemo' },
           { text: 'errorHandler', link: '/notes/vue/errorHandler' },
-          { text: 'defineAsyncComponent', link: '/notes/vue/defineAsyncComponent' }
+          { text: 'defineAsyncComponent', link: '/notes/vue/defineAsyncComponent' },
+          { text: 'useSlots', link: '/notes/vue/useSlots' },
+          { text: 'attributes', link: '/notes/vue/attributes' },
+          { text: 'router', link: '/notes/vue/router' },
+          { text: 'pushState', link: '/notes/vue/pushState' }
         ]
       },
       {
@@ -60,6 +64,7 @@ export default {
           { text: '类组件生命周期', link: '/notes/react/classLifeCycle.md' },
           { text: 'zustand', link: '/notes/react/zustand.md' },
           { text: 'createElement和CloneElement', link: '/notes/react/createElementAndCloneElement.md' },
+          { text: 'suspense', link: '/notes/react/suspense.md' },
           { text: 'hooks', link: '/notes/react/hooks/useCallBack.md' },
           { text: 'react搭配ts', link: '/notes/react/ts/useState.md' }
         ]
@@ -137,7 +142,11 @@ export default {
             { text: 'vPre', link: '/notes/vue/vPre' },
             { text: 'vMemo', link: '/notes/vue/vMemo' },
             { text: 'errorHandler', link: '/notes/vue/errorHandler' },
-            { text: 'defineAsyncComponent', link: '/notes/vue/defineAsyncComponent' }
+            { text: 'defineAsyncComponent', link: '/notes/vue/defineAsyncComponent' },
+            { text: 'useSlots', link: '/notes/vue/useSlots' },
+            { text: 'attributes', link: '/notes/vue/attributes' },
+            { text: 'router', link: '/notes/vue/router' },
+            { text: 'pushState', link: '/notes/vue/pushState' }
           ]
         }
       ],
@@ -151,12 +160,14 @@ export default {
             { text: '类组件生命周期', link: '/notes/react/classLifeCycle.md' },
             { text: 'zustand', link: '/notes/react/zustand.md' },
             { text: 'createElement和CloneElement', link: '/notes/react/createElementAndCloneElement.md' },
+            { text: 'suspense', link: '/notes/react/suspense.md' },
             {
               text: 'hooks',
               items: [
                 { text: 'useCallBack', link: '/notes/react/hooks/useCallBack.md' },
                 { text: 'useMemo', link: '/notes/react/hooks/useMemo.md' },
-                { text: 'useReducer', link: '/notes/react/hooks/useReducer.md' }
+                { text: 'useReducer', link: '/notes/react/hooks/useReducer.md' },
+                { text: 'hooksMechanism', link: '/notes/react/hooks/hooksMechanism.md' }
               ]
             },
             {
