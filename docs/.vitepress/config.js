@@ -34,7 +34,26 @@ export default {
           { text: 'slotted伪类选择器', link: '/notes/css/slotted' }
         ]
       },
-      { text: 'JS', ariaLabel: 'JS', items: [{ text: 'JS', link: '/notes/js/js' }] },
+      {
+        text: 'JS',
+        ariaLabel: 'JS',
+        items: [
+          { text: 'jsAsync', link: '/notes/js/asyncReason' },
+          { text: 'dataType', link: '/notes/js/dataType' },
+          { text: 'arrayMethod', link: '/notes/js/arrayMethod' },
+          { text: 'strMethod', link: '/notes/js/strMethod' },
+          { text: 'typeConversion', link: '/notes/js/typeConversion' },
+          { text: 'copy', link: '/notes/js/copy' },
+          { text: 'closure', link: '/notes/js/closure' },
+          { text: 'scope', link: '/notes/js/scope' },
+          { text: 'eventLoop', link: '/notes/js/eventLoop' },
+          { text: 'includeBlock', link: '/notes/js/includeBlock' },
+          { text: 'defineProperty', link: '/notes/js/defineProperty' },
+          { text: 'endlessLoop', link: '/notes/js/endlessLoop' },
+          { text: 'prototype', link: '/notes/js/prototype' },
+          { text: 'thisKeyword', link: '/notes/js/thisKeyword' }
+        ]
+      },
       {
         text: 'Vue',
         ariaLabel: 'VUE',
@@ -118,7 +137,22 @@ export default {
       '/notes/js/': [
         {
           text: 'JS',
-          items: [{ text: 'JS', link: '/notes/js/js' }]
+          items: [
+            { text: 'jsAsync', link: '/notes/js/asyncReason' },
+            { text: 'dataType', link: '/notes/js/dataType' },
+            { text: 'arrayMethod', link: '/notes/js/arrayMethod' },
+            { text: 'strMethod', link: '/notes/js/strMethod' },
+            { text: 'typeConversion', link: '/notes/js/typeConversion' },
+            { text: 'copy', link: '/notes/js/copy' },
+            { text: 'closure', link: '/notes/js/closure' },
+            { text: 'scope', link: '/notes/js/scope' },
+            { text: 'eventLoop', link: '/notes/js/eventLoop' },
+            { text: 'includeBlock', link: '/notes/js/includeBlock' },
+            { text: 'defineProperty', link: '/notes/js/defineProperty' },
+            { text: 'endlessLoop', link: '/notes/js/endlessLoop' },
+            { text: 'prototype', link: '/notes/js/prototype' },
+            { text: 'thisKeyword', link: '/notes/js/thisKeyword' }
+          ]
         }
       ],
       '/notes/vue/': [
