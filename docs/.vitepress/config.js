@@ -56,7 +56,18 @@ export default {
           { text: 'new关键字', link: '/notes/js/new' },
           { text: 'apply、call、bind', link: '/notes/js/apply' },
           { text: 'dom操作', link: '/notes/js/domOperation' },
-          { text: 'bom操作', link: '/notes/js/bomOperation' }
+          { text: 'bom操作', link: '/notes/js/bomOperation' },
+          { text: 'js垃圾回收机制', link: '/notes/js/rubbishRecovery' },
+          { text: '内存泄漏', link: '/notes/js/memoryLeakage' },
+          { text: '0.1+0.2不等于0.3解决方法', link: '/notes/js/unequal' },
+          { text: '节流和防抖', link: '/notes/js/throttleShake' },
+          { text: 'offset和client的区别', link: '/notes/js/offsetClient' },
+          { text: 'IntersectionObserver', link: '/notes/js/IntersectionObserver' },
+          { text: '封装可复用组件条件', link: '/notes/js/reuseComponents' },
+          { text: 'keep-alive', link: '/notes/js/keepAlive' },
+          { text: 'ajax原理', link: '/notes/js/ajax' },
+          { text: '跨域的解决方法', link: '/notes/js/crossDomain' },
+          { text: 'get和post请求区别', link: '/notes/js/request' }
         ]
       },
       {
@@ -76,7 +87,8 @@ export default {
           { text: 'useSlots', link: '/notes/vue/useSlots' },
           { text: '透传attributes', link: '/notes/vue/attributes' },
           { text: 'router实现原理', link: '/notes/vue/router' },
-          { text: 'pushState', link: '/notes/vue/pushState' }
+          { text: 'pushState', link: '/notes/vue/pushState' },
+          { text: 'defineExpose', link: '/notes/vue/defineExpose' }
         ]
       },
       {
@@ -161,7 +173,18 @@ export default {
             { text: 'new关键字', link: '/notes/js/new' },
             { text: 'apply、call、bind', link: '/notes/js/apply' },
             { text: 'dom操作', link: '/notes/js/domOperation' },
-            { text: 'bom操作', link: '/notes/js/bomOperation' }
+            { text: 'bom操作', link: '/notes/js/bomOperation' },
+            { text: 'js垃圾回收机制', link: '/notes/js/rubbishRecovery' },
+            { text: '内存泄漏', link: '/notes/js/memoryLeakage' },
+            { text: '0.1+0.2不等于0.3解决方法', link: '/notes/js/unequal' },
+            { text: '节流和防抖', link: '/notes/js/throttleShake' },
+            { text: 'offset和client的区别', link: '/notes/js/offsetClient' },
+            { text: 'IntersectionObserver', link: '/notes/js/IntersectionObserver' },
+            { text: '封装可复用组件条件', link: '/notes/js/reuseComponents' },
+            { text: 'keep-alive', link: '/notes/js/keepAlive' },
+            { text: 'ajax原理', link: '/notes/js/ajax' },
+            { text: '跨域的解决方法', link: '/notes/js/crossDomain' },
+            { text: 'get和post请求区别', link: '/notes/js/request' }
           ]
         }
       ],
@@ -190,7 +213,8 @@ export default {
             { text: 'useSlots', link: '/notes/vue/useSlots' },
             { text: '透传attributes', link: '/notes/vue/attributes' },
             { text: 'router实现原理', link: '/notes/vue/router' },
-            { text: 'pushState', link: '/notes/vue/pushState' }
+            { text: 'pushState', link: '/notes/vue/pushState' },
+            { text: 'defineExpose', link: '/notes/vue/defineExpose' }
           ]
         }
       ],

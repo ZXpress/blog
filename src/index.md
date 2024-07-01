@@ -20,7 +20,7 @@ features:
       light: /js.png
     title: JavaScript
     details: 跨平台、面向对象的脚本语言
-    link: /notes/js/js
+    link: /notes/js/asyncReason
   - icon:
       src: /vue.png
     title: Vue
