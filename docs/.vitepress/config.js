@@ -64,7 +64,6 @@ export default {
           { text: 'offset和client的区别', link: '/notes/js/offsetClient' },
           { text: 'IntersectionObserver', link: '/notes/js/IntersectionObserver' },
           { text: '封装可复用组件条件', link: '/notes/js/reuseComponents' },
-          { text: 'keep-alive', link: '/notes/js/keepAlive' },
           { text: 'ajax原理', link: '/notes/js/ajax' },
           { text: '跨域的解决方法', link: '/notes/js/crossDomain' },
           { text: 'get和post请求区别', link: '/notes/js/request' }
@@ -88,7 +87,19 @@ export default {
           { text: '透传attributes', link: '/notes/vue/attributes' },
           { text: 'router实现原理', link: '/notes/vue/router' },
           { text: 'pushState', link: '/notes/vue/pushState' },
-          { text: 'defineExpose', link: '/notes/vue/defineExpose' }
+          { text: 'defineExpose', link: '/notes/vue/defineExpose' },
+          { text: 'SPA单页面应用优缺点', link: '/notes/vue/singlePage' },
+          { text: 'v-show和v-if', link: '/notes/vue/vShowVIf' },
+          { text: 'v-if和v-for为什么不建议放在一起', link: '/notes/vue/vIfVFor' },
+          { text: 'Vue生命周期', link: '/notes/vue/lifeCycle' },
+          { text: 'Vue2中给对象添加新属性页面不刷新原因', link: '/notes/vue/objProperty' },
+          { text: 'proxy代理', link: '/notes/vue/proxy' },
+          { text: 'Vue组件和插件', link: '/notes/vue/componentPlugin' },
+          { text: '组件间通信方式', link: '/notes/vue/communication' },
+          { text: 'Vue数据双向绑定原理', link: '/notes/vue/binding' },
+          { text: 'defineModel', link: '/notes/vue/defineModel' },
+          { text: 'mixin', link: '/notes/vue/mixin' },
+          { text: 'keep-alive', link: '/notes/vue/keepAlive' }
         ]
       },
       {
@@ -181,7 +192,6 @@ export default {
             { text: 'offset和client的区别', link: '/notes/js/offsetClient' },
             { text: 'IntersectionObserver', link: '/notes/js/IntersectionObserver' },
             { text: '封装可复用组件条件', link: '/notes/js/reuseComponents' },
-            { text: 'keep-alive', link: '/notes/js/keepAlive' },
             { text: 'ajax原理', link: '/notes/js/ajax' },
             { text: '跨域的解决方法', link: '/notes/js/crossDomain' },
             { text: 'get和post请求区别', link: '/notes/js/request' }
@@ -214,7 +224,19 @@ export default {
             { text: '透传attributes', link: '/notes/vue/attributes' },
             { text: 'router实现原理', link: '/notes/vue/router' },
             { text: 'pushState', link: '/notes/vue/pushState' },
-            { text: 'defineExpose', link: '/notes/vue/defineExpose' }
+            { text: 'defineExpose', link: '/notes/vue/defineExpose' },
+            { text: 'SPA单页面应用优缺点', link: '/notes/vue/singlePage' },
+            { text: 'v-show和v-if', link: '/notes/vue/vShowVIf' },
+            { text: 'v-if和v-for为什么不建议放在一起', link: '/notes/vue/vIfVFor' },
+            { text: 'Vue生命周期', link: '/notes/vue/lifeCycle' },
+            { text: 'Vue2中给对象添加新属性页面不刷新原因', link: '/notes/vue/objProperty' },
+            { text: 'proxy代理', link: '/notes/vue/proxy' },
+            { text: 'Vue组件和插件', link: '/notes/vue/componentPlugin' },
+            { text: '组件间通信方式', link: '/notes/vue/communication' },
+            { text: 'Vue数据双向绑定原理', link: '/notes/vue/binding' },
+            { text: 'defineModel', link: '/notes/vue/defineModel' },
+            { text: 'mixin', link: '/notes/vue/mixin' },
+            { text: 'keep-alive', link: '/notes/vue/keepAlive' }
           ]
         }
       ],
