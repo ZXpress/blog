@@ -1,12 +1,107 @@
 # 自定义指令 [​](#custom-directives)
 
-## 介绍 [​](#introduction)
+## Vue2 自定义指令 [](#vue2-introduction)
 
-除了 Vue 内置的一系列指令 (比如 `v-model` 或 `v-show`) 之外，Vue 还允许你注册自定义的指令 (Custom Directives)。
+### 组件局部注册
 
-我们已经介绍了两种在 Vue 中重用代码的方式：[组件](https://cn.vuejs.org/guide/essentials/component-basics.html)和[组合式函数](https://cn.vuejs.org/guide/reusability/composables.html)。组件是主要的构建模块，而组合式函数则侧重于有状态的逻辑。另一方面，自定义指令主要是为了重用涉及普通元素的底层 DOM 访问的逻辑。
+```vue
+<template>
+  <div>
+    <input type="text" v-focus="123" />
+  </div>
+</template>
 
-一个自定义指令由一个包含类似组件生命周期钩子的对象来定义。钩子函数会接收到指令所绑定元素作为其参数。下面是一个自定义指令的例子，当一个 input 元素被 Vue 插入到 DOM 中后，它会被自动聚焦：
+<script>
+export default {
+  directives: {
+    focus: {
+      // 自定义指令的名字
+      // 下面每个方法都是一个钩子函数
+      // el代表 当前绑定的dom元素
+      bind: (el, binding) => {
+        el.value = 56 // 可以赋值 不能使用方法
+        console.log('bind:只调用一次，指令第一次绑定到元素时调用。在这里可以进行一次性的初始化设置。')
+      },
+      inserted: (el, binding) => {
+        el.focus() // 可以使用方法
+        console.log('inserted:被绑定元素插入父节点时调用 (仅保证父节点存在，但不一定已被插入文档中)。')
+      },
+      update: (el, binding) => {
+        console.log('update:被绑定元素所在模板更新时调用,模板还没更新完成')
+      },
+      componentUpdated: (el, binding) => {
+        console.log('componentUpdated:指令所在组件的 VNode 及其子 VNode 全部更新后调用。')
+      },
+      unbind: (el, binding) => {
+        console.log('unbind:只调用一次，指令与元素解绑时调用。')
+      }
+    }
+  }
+}
+</script>
+```
+
+### 全局注册
+
+```js
+Vue.directive('focus', {
+  inserted: function (el, bind) {
+    el.focus()
+    console.log(el, bind)
+  }
+})
+```
+
+### 插件形式
+
+```js
+export default {
+  install(Vue) {
+    Vue.directive('focus', {
+      inserted: function (el, bind) {
+        el.focus()
+        console.log(el, bind)
+      }
+    })
+  }
+}
+
+//main.js
+import directive from './views/directive'
+Vue.use(directive)
+```
+
+### 应用场景：表单防止重复提交
+
+event.stopImmediatePropagation()：如果多个事件监听器被附加到相同元素的相同事件类型上，如果在其中一个事件监听器中执行 stopImmediatePropagation() ，那么剩下的事件监听器都不会被调用
+
+```js
+// 1.设置v-throttle自定义指令
+Vue.directive('throttle', {
+  bind: (el, binding) => {
+    let throttleTime = binding.value; // 节流时间
+    if (!throttleTime) { // 用户若不设置节流时间，则默认2s
+      throttleTime = 2000;
+    }
+    let cbFun;
+    el.addEventListener('click', event => {
+      if (!cbFun) { // 第一次执行
+        cbFun = setTimeout(() => {
+          cbFun = null;
+        }, throttleTime);
+      } else {
+        event && event.stopImmediatePropagation();
+      }
+    }, true);
+  },
+});
+// 2.为button标签设置v-throttle自定义指令
+<button @click="sayHello" v-throttle>提交</button>
+```
+
+## Vue3 自定义指令 [](#vue3-introduction)
+
+包含类似组件生命周期钩子的对象来定义。钩子函数会接收到指令所绑定元素作为其参数。下面是一个自定义指令的例子，当一个 input 元素被 Vue 插入到 DOM 中后，它会被自动聚焦：
 
 ```vue
 <script setup>
@@ -83,11 +178,25 @@ app.directive('focus', {
 })
 ```
 
-TIP
+注意：
 
 只有当所需功能只能通过直接的 DOM 操作来实现时，才应该使用自定义指令。其他情况下应该尽可能地使用 `v-bind` 这样的内置指令来声明式地使用模板，这样更高效，也对服务端渲染更友好。
 
-## 指令钩子 [​](#directive-hooks)
+### 插件形式
+
+```js
+export default {
+  install(app) {
+    app.directive('test', {
+      mounted(el, binding) {
+        console.log(el, binding)
+      }
+    })
+  }
+}
+```
+
+### 指令钩子 [​](#directive-hooks)
 
 一个指令的定义对象可以提供几种钩子函数 (都是可选的)：
 
@@ -115,7 +224,7 @@ const myDirective = {
 }
 ```
 
-### 钩子参数 [​](#hook-arguments)
+#### 钩子参数 [​](#hook-arguments)
 
 指令的钩子会传递以下几种参数：
 
@@ -157,11 +266,11 @@ const myDirective = {
 
 这里指令的参数会基于组件的 `arg` 数据属性响应式地更新。
 
-Note
+注意：
 
 除了 `el` 外，其他参数都是只读的，不要更改它们。若你需要在不同的钩子间共享信息，推荐通过元素的 [dataset](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset) attribute 实现。
 
-## 简化形式 [​](#function-shorthand)
+### 简化形式 [​](#function-shorthand)
 
 对于自定义指令来说，一个很常见的情况是仅仅需要在 `mounted` 和 `updated` 上实现相同的行为，除此之外并不需要其他钩子。这种情况下我们可以直接用一个函数来定义指令，如下所示：
 
@@ -176,7 +285,7 @@ app.directive('color', (el, binding) => {
 })
 ```
 
-## 对象字面量 [​](#object-literals)
+### 对象字面量 [​](#object-literals)
 
 如果你的指令需要多个值，你可以向它传递一个 JavaScript 对象字面量。别忘了，指令也可以接收任何合法的 JavaScript 表达式。
 
@@ -191,7 +300,7 @@ app.directive('demo', (el, binding) => {
 })
 ```
 
-## 在组件上使用 [​](#usage-on-components)
+### 在组件上使用 [​](#usage-on-components)
 
 不推荐
 
@@ -213,3 +322,22 @@ app.directive('demo', (el, binding) => {
 ```
 
 需要注意的是组件可能含有多个根节点。当应用到一个多根组件时，指令将会被忽略且抛出一个警告。和 attribute 不同，指令不能通过 `v-bind="$attrs"` 来传递给一个不同的元素。
+
+## Vue2 和 Vue3 中的区别 [](#vue2和vue3中的区别)
+
+vue2 中绑定的钩子函数为
+
+- bind - 指令绑定到元素后发生。只发生一次
+- inserted - 元素插入父 DOM 后发生
+- update - 当元素更新，但子元素尚未更新时，将调用此钩子
+- componentUpdated - 一旦组件和子级被更新，就会调用这个钩子
+- unbind - 一旦指令被移除，就会调用这个钩子。也只调用一次
+
+vue3 中
+
+- bind → beforeMount
+- inserted → mounted
+- beforeUpdate：新的！这是在元素本身更新之前调用的，很像组件生命周期钩子。
+- componentUpdated → updated
+- beforeUnmount：新的！与组件生命周期钩子类似，它将在卸载元素之前调用。
+- unbind -> unmounted

@@ -66,7 +66,12 @@ export default {
           { text: '封装可复用组件条件', link: '/notes/js/reuseComponents' },
           { text: 'ajax原理', link: '/notes/js/ajax' },
           { text: '跨域的解决方法', link: '/notes/js/crossDomain' },
-          { text: 'get和post请求区别', link: '/notes/js/request' }
+          { text: 'get和post请求区别', link: '/notes/js/request' },
+          { text: 'JS三部分组成', link: '/notes/js/jsConstitute' },
+          { text: '定时器最小执行时间', link: '/notes/js/executionTime' },
+          { text: 'promise异步', link: '/notes/js/promise' },
+          { text: 'symbol数据类型', link: '/notes/js/symbol' },
+          { text: '数组扁平化', link: '/notes/js/flat' }
         ]
       },
       {
@@ -93,13 +98,20 @@ export default {
           { text: 'v-if和v-for为什么不建议放在一起', link: '/notes/vue/vIfVFor' },
           { text: 'Vue生命周期', link: '/notes/vue/lifeCycle' },
           { text: 'Vue2中给对象添加新属性页面不刷新原因', link: '/notes/vue/objProperty' },
-          { text: 'proxy代理', link: '/notes/vue/proxy' },
+          { text: 'ES6 proxy', link: '/notes/vue/proxy' },
           { text: 'Vue组件和插件', link: '/notes/vue/componentPlugin' },
           { text: '组件间通信方式', link: '/notes/vue/communication' },
           { text: 'Vue数据双向绑定原理', link: '/notes/vue/binding' },
           { text: 'defineModel', link: '/notes/vue/defineModel' },
-          { text: 'mixin', link: '/notes/vue/mixin' },
-          { text: 'keep-alive', link: '/notes/vue/keepAlive' }
+          { text: '混入mixin', link: '/notes/vue/mixin' },
+          { text: 'keep-alive', link: '/notes/vue/keepAlive' },
+          { text: 'Vue常用修饰符', link: '/notes/vue/modifier' },
+          { text: '虚拟DOM', link: '/notes/vue/virtualDOM' },
+          { text: 'el、template、render、mount的用法', link: '/notes/vue/mount' },
+          { text: 'axios取消请求', link: '/notes/vue/cancelToken' },
+          { text: 'Vue项目目录结构划分', link: '/notes/vue/directoryStructure' },
+          { text: '权限管理', link: '/notes/vue/permission' },
+          { text: 'Vue跨域代理', link: '/notes/vue/crossDomain' }
         ]
       },
       {
@@ -194,7 +206,12 @@ export default {
             { text: '封装可复用组件条件', link: '/notes/js/reuseComponents' },
             { text: 'ajax原理', link: '/notes/js/ajax' },
             { text: '跨域的解决方法', link: '/notes/js/crossDomain' },
-            { text: 'get和post请求区别', link: '/notes/js/request' }
+            { text: 'get和post请求区别', link: '/notes/js/request' },
+            { text: 'JS三部分组成', link: '/notes/js/jsConstitute' },
+            { text: '定时器最小执行时间', link: '/notes/js/executionTime' },
+            { text: 'promise异步', link: '/notes/js/promise' },
+            { text: 'symbol数据类型', link: '/notes/js/symbol' },
+            { text: '数组扁平化', link: '/notes/js/flat' }
           ]
         }
       ],
@@ -230,13 +247,20 @@ export default {
             { text: 'v-if和v-for为什么不建议放在一起', link: '/notes/vue/vIfVFor' },
             { text: 'Vue生命周期', link: '/notes/vue/lifeCycle' },
             { text: 'Vue2中给对象添加新属性页面不刷新原因', link: '/notes/vue/objProperty' },
-            { text: 'proxy代理', link: '/notes/vue/proxy' },
+            { text: 'ES6 proxy', link: '/notes/vue/proxy' },
             { text: 'Vue组件和插件', link: '/notes/vue/componentPlugin' },
             { text: '组件间通信方式', link: '/notes/vue/communication' },
             { text: 'Vue数据双向绑定原理', link: '/notes/vue/binding' },
             { text: 'defineModel', link: '/notes/vue/defineModel' },
-            { text: 'mixin', link: '/notes/vue/mixin' },
-            { text: 'keep-alive', link: '/notes/vue/keepAlive' }
+            { text: '混入mixin', link: '/notes/vue/mixin' },
+            { text: 'keep-alive', link: '/notes/vue/keepAlive' },
+            { text: 'Vue常用修饰符', link: '/notes/vue/modifier' },
+            { text: '虚拟DOM', link: '/notes/vue/virtualDOM' },
+            { text: 'el、template、render、mount的用法', link: '/notes/vue/mount' },
+            { text: 'axios取消请求', link: '/notes/vue/cancelToken' },
+            { text: 'Vue项目目录结构划分', link: '/notes/vue/directoryStructure' },
+            { text: '权限管理', link: '/notes/vue/permission' },
+            { text: 'Vue跨域代理', link: '/notes/vue/crossDomain' }
           ]
         }
       ],
