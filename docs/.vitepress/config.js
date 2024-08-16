@@ -125,7 +125,15 @@ export default {
           { text: 'createElement和CloneElement', link: '/notes/react/createElementAndCloneElement.md' },
           { text: 'suspense', link: '/notes/react/suspense.md' },
           { text: 'hooks', link: '/notes/react/hooks/useCallBack.md' },
-          { text: 'react搭配ts', link: '/notes/react/ts/useState.md' }
+          { text: 'React搭配ts', link: '/notes/react/ts/useState.md' },
+          { text: 'React和Vue的区别', link: '/notes/react/difference.md' },
+          { text: 'React工作原理', link: '/notes/react/principle.md' },
+          { text: 'setState和useState', link: '/notes/react/state.md' },
+          { text: 'useState拿到更新后最新值', link: '/notes/react/latestValue.md' },
+          { text: 'React性能优化', link: '/notes/react/performance.md' },
+          { text: '什么是jsx', link: '/notes/react/jsx.md' },
+          { text: '虚拟DOM中key的作用', link: '/notes/react/key.md' },
+          { text: '类组件和函数组件的区别', link: '/notes/react/componentDif.md' }
         ]
       },
       {
@@ -285,13 +293,21 @@ export default {
               ]
             },
             {
-              text: 'react搭配ts',
+              text: 'React搭配ts',
               items: [
                 { text: 'useState', link: '/notes/react/ts/useState.md' },
                 { text: 'useRef', link: '/notes/react/ts/useRef.md' },
                 { text: '组件和ts', link: '/notes/react/ts/components-ts.md' }
               ]
-            }
+            },
+            { text: 'React和Vue的区别', link: '/notes/react/difference.md' },
+            { text: 'React工作原理', link: '/notes/react/principle.md' },
+            { text: 'setState和useState', link: '/notes/react/state.md' },
+            { text: 'useState拿到更新后最新值', link: '/notes/react/latestValue.md' },
+            { text: 'React性能优化', link: '/notes/react/performance.md' },
+            { text: '什么是jsx', link: '/notes/react/jsx.md' },
+            { text: '虚拟DOM中key的作用', link: '/notes/react/key.md' },
+            { text: '类组件和函数组件的区别', link: '/notes/react/componentDif.md' }
           ]
         }
       ]
