@@ -133,7 +133,13 @@ export default {
           { text: 'React性能优化', link: '/notes/react/performance.md' },
           { text: '什么是jsx', link: '/notes/react/jsx.md' },
           { text: '虚拟DOM中key的作用', link: '/notes/react/key.md' },
-          { text: '类组件和函数组件的区别', link: '/notes/react/componentDif.md' }
+          { text: '类组件和函数组件的区别', link: '/notes/react/componentDif.md' },
+          { text: 'HOC高阶组件', link: '/notes/react/HOC.md' },
+          { text: 'setState相关', link: '/notes/react/setState.md' },
+          { text: 'React合成事件和原生事件的区别', link: '/notes/react/eventMechanism.md' },
+          { text: 'React中事件绑定方式', link: '/notes/react/eventBind.md' },
+          { text: 'React创建ref的的形式', link: '/notes/react/ref.md' },
+          { text: 'React中引入css的方式', link: '/notes/react/cssIntroduce.md' }
         ]
       },
       {
@@ -286,10 +292,12 @@ export default {
             {
               text: 'hooks',
               items: [
+                { text: 'hooks的优缺点', link: '/notes/react/hooks/advantage.md' },
                 { text: 'useCallBack', link: '/notes/react/hooks/useCallBack.md' },
                 { text: 'useMemo', link: '/notes/react/hooks/useMemo.md' },
                 { text: 'useReducer', link: '/notes/react/hooks/useReducer.md' },
-                { text: 'hooksMechanism', link: '/notes/react/hooks/hooksMechanism.md' }
+                { text: 'hooksMechanism', link: '/notes/react/hooks/hooksMechanism.md' },
+                { text: 'useEffect和uselayouteffect区别', link: '/notes/react/hooks/useLayoutEffect.md' }
               ]
             },
             {
@@ -307,7 +315,13 @@ export default {
             { text: 'React性能优化', link: '/notes/react/performance.md' },
             { text: '什么是jsx', link: '/notes/react/jsx.md' },
             { text: '虚拟DOM中key的作用', link: '/notes/react/key.md' },
-            { text: '类组件和函数组件的区别', link: '/notes/react/componentDif.md' }
+            { text: '类组件和函数组件的区别', link: '/notes/react/componentDif.md' },
+            { text: 'HOC高阶组件', link: '/notes/react/HOC.md' },
+            { text: 'setState相关', link: '/notes/react/setState.md' },
+            { text: 'React合成事件和原生事件的区别', link: '/notes/react/eventMechanism.md' },
+            { text: 'React中事件绑定方式', link: '/notes/react/eventBind.md' },
+            { text: 'React创建ref的的形式', link: '/notes/react/ref.md' },
+            { text: 'React中引入css的方式', link: '/notes/react/cssIntroduce.md' }
           ]
         }
       ]

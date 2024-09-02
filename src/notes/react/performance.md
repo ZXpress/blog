@@ -129,7 +129,7 @@ export default class App extends React.Component {
 }
 ```
 
-正确的做法是在组件中单独定义函数, 将函数绑定给事件
+正确的做法是在组件中单独定义函数, 将函数绑定给事件，<a href="/notes/react/eventBind">参考 React 事件绑定方式</a>
 
 ```js
 import React from 'react'
