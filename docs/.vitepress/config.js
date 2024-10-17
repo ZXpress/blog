@@ -75,6 +75,11 @@ export default {
         ]
       },
       {
+        text: 'TS',
+        ariaLabel: 'TS',
+        items: [{ text: 'ts的理解和js的区别', link: '/notes/ts/difference' }]
+      },
+      {
         text: 'Vue',
         ariaLabel: 'VUE',
         items: [
@@ -111,7 +116,8 @@ export default {
           { text: 'axios取消请求', link: '/notes/vue/cancelToken' },
           { text: 'Vue项目目录结构划分', link: '/notes/vue/directoryStructure' },
           { text: '权限管理', link: '/notes/vue/permission' },
-          { text: 'Vue跨域代理', link: '/notes/vue/crossDomain' }
+          { text: 'Vue跨域代理', link: '/notes/vue/crossDomain' },
+          { text: 'Vue服务器端渲染', link: '/notes/vue/ssr' }
         ]
       },
       {
@@ -139,7 +145,13 @@ export default {
           { text: 'React合成事件和原生事件的区别', link: '/notes/react/eventMechanism.md' },
           { text: 'React中事件绑定方式', link: '/notes/react/eventBind.md' },
           { text: 'React创建ref的的形式', link: '/notes/react/ref.md' },
-          { text: 'React中引入css的方式', link: '/notes/react/cssIntroduce.md' }
+          { text: 'React中引入css的方式', link: '/notes/react/cssIntroduce.md' },
+          { text: 'Redux', link: '/notes/react/redux.md' },
+          { text: 'react中render方法的原理', link: '/notes/react/render.md' },
+          { text: 'jsx转换为真实DOM的过程', link: '/notes/react/jsxConvert.md' },
+          { text: 'React项目中捕获错误', link: '/notes/react/captureError.md' },
+          { text: 'React服务器端渲染', link: '/notes/react/ssr' },
+          { text: '使用React过程中遇到的问题', link: '/notes/react/questionSum' }
         ]
       },
       {
@@ -229,6 +241,12 @@ export default {
           ]
         }
       ],
+      '/notes/ts/': [
+        {
+          text: 'TS',
+          items: [{ text: 'ts的理解和js的区别', link: '/notes/ts/difference' }]
+        }
+      ],
       '/notes/vue/': [
         {
           text: 'Vue',
@@ -274,7 +292,8 @@ export default {
             { text: 'axios取消请求', link: '/notes/vue/cancelToken' },
             { text: 'Vue项目目录结构划分', link: '/notes/vue/directoryStructure' },
             { text: '权限管理', link: '/notes/vue/permission' },
-            { text: 'Vue跨域代理', link: '/notes/vue/crossDomain' }
+            { text: 'Vue跨域代理', link: '/notes/vue/crossDomain' },
+            { text: 'Vue服务器端渲染', link: '/notes/vue/ssr' }
           ]
         }
       ],
@@ -296,7 +315,7 @@ export default {
                 { text: 'useCallBack', link: '/notes/react/hooks/useCallBack.md' },
                 { text: 'useMemo', link: '/notes/react/hooks/useMemo.md' },
                 { text: 'useReducer', link: '/notes/react/hooks/useReducer.md' },
-                { text: 'hooksMechanism', link: '/notes/react/hooks/hooksMechanism.md' },
+                { text: 'hooks实现机制', link: '/notes/react/hooks/hooksMechanism.md' },
                 { text: 'useEffect和uselayouteffect区别', link: '/notes/react/hooks/useLayoutEffect.md' }
               ]
             },
@@ -321,7 +340,13 @@ export default {
             { text: 'React合成事件和原生事件的区别', link: '/notes/react/eventMechanism.md' },
             { text: 'React中事件绑定方式', link: '/notes/react/eventBind.md' },
             { text: 'React创建ref的的形式', link: '/notes/react/ref.md' },
-            { text: 'React中引入css的方式', link: '/notes/react/cssIntroduce.md' }
+            { text: 'React中引入css的方式', link: '/notes/react/cssIntroduce.md' },
+            { text: 'Redux', link: '/notes/react/redux.md' },
+            { text: 'react中render方法的原理', link: '/notes/react/render.md' },
+            { text: 'jsx转换为真实DOM的过程', link: '/notes/react/jsxConvert.md' },
+            { text: 'React项目中捕获错误', link: '/notes/react/captureError.md' },
+            { text: 'React服务器端渲染', link: '/notes/react/ssr' },
+            { text: '使用React过程中遇到的问题', link: '/notes/react/questionSum' }
           ]
         }
       ]
