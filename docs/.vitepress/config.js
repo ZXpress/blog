@@ -77,7 +77,19 @@ export default {
       {
         text: 'TS',
         ariaLabel: 'TS',
-        items: [{ text: 'ts的理解和js的区别', link: '/notes/ts/difference' }]
+        items: [
+          { text: 'ts的理解和js的区别', link: '/notes/ts/difference' },
+          { text: 'ts数据类型', link: '/notes/ts/dataType' },
+          { text: 'ts中的枚举类型', link: '/notes/ts/enum' },
+          { text: 'ts中的接口类型', link: '/notes/ts/interface' },
+          { text: 'ts中的类class', link: '/notes/ts/class' },
+          { text: 'ts中的函数', link: '/notes/ts/function' },
+          { text: 'ts中的泛型', link: '/notes/ts/generic' },
+          { text: 'ts中的高级类型', link: '/notes/ts/advancedType' },
+          { text: 'ts装饰器', link: '/notes/ts/decorator' },
+          { text: 'ts命名空间和模块', link: '/notes/ts/namespace' },
+          { text: 'ts在react项目中的应用', link: '/notes/ts/reactTs' }
+        ]
       },
       {
         text: 'Vue',
@@ -244,7 +256,19 @@ export default {
       '/notes/ts/': [
         {
           text: 'TS',
-          items: [{ text: 'ts的理解和js的区别', link: '/notes/ts/difference' }]
+          items: [
+            { text: 'ts的理解和js的区别', link: '/notes/ts/difference' },
+            { text: 'ts数据类型', link: '/notes/ts/dataType' },
+            { text: 'ts中的枚举类型', link: '/notes/ts/enum' },
+            { text: 'ts中的接口类型', link: '/notes/ts/interface' },
+            { text: 'ts中的类class', link: '/notes/ts/class' },
+            { text: 'ts中的函数', link: '/notes/ts/function' },
+            { text: 'ts中的泛型', link: '/notes/ts/generic' },
+            { text: 'ts中的高级类型', link: '/notes/ts/advancedType' },
+            { text: 'ts装饰器', link: '/notes/ts/decorator' },
+            { text: 'ts命名空间和模块', link: '/notes/ts/namespace' },
+            { text: 'ts在react项目中的应用', link: '/notes/ts/reactTs' }
+          ]
         }
       ],
       '/notes/vue/': [
