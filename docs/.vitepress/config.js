@@ -88,7 +88,7 @@ export default {
           { text: 'ts中的高级类型', link: '/notes/ts/advancedType' },
           { text: 'ts装饰器', link: '/notes/ts/decorator' },
           { text: 'ts命名空间和模块', link: '/notes/ts/namespace' },
-          { text: 'ts在react项目中的应用', link: '/notes/ts/reactTs.md' }
+          { text: 'ts在react项目中的应用', link: '/notes/ts/reactTs.html' }
         ]
       },
       {
@@ -267,7 +267,7 @@ export default {
             { text: 'ts中的高级类型', link: '/notes/ts/advancedType' },
             { text: 'ts装饰器', link: '/notes/ts/decorator' },
             { text: 'ts命名空间和模块', link: '/notes/ts/namespace' },
-            { text: 'ts在react项目中的应用', link: '/notes/ts/reactTs.md' }
+            { text: 'ts在react项目中的应用', link: '/notes/ts/reactTs.html' }
           ]
         }
       ],
