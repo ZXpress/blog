@@ -31,7 +31,8 @@ export default {
           { text: '响应式设计', link: '/notes/css/responsive' },
           { text: 'CSS三角形', link: '/notes/css/triangle' },
           { text: 'less对比sass', link: '/notes/css/lessOrSass' },
-          { text: 'slotted伪类选择器', link: '/notes/css/slotted' }
+          { text: 'slotted伪类选择器', link: '/notes/css/slotted' },
+          { text: 'chrome支持字体小于12px方法', link: '/notes/css/twelve' }
         ]
       },
       {
@@ -88,7 +89,7 @@ export default {
           { text: 'ts中的高级类型', link: '/notes/ts/advancedType' },
           { text: 'ts装饰器', link: '/notes/ts/decorator' },
           { text: 'ts命名空间和模块', link: '/notes/ts/namespace' },
-          { text: 'ts在react项目中的应用', link: '/notes/ts/reactTs.html' }
+          { text: 'ts在react项目中的应用', link: '/notes/ts/reactTs' }
         ]
       },
       {
@@ -208,7 +209,8 @@ export default {
             { text: '响应式设计', link: '/notes/css/responsive' },
             { text: 'CSS三角形', link: '/notes/css/triangle' },
             { text: 'less对比sass', link: '/notes/css/lessOrSass' },
-            { text: 'slotted伪类选择器', link: '/notes/css/slotted' }
+            { text: 'slotted伪类选择器', link: '/notes/css/slotted' },
+            { text: 'chrome支持字体小于12px方法', link: '/notes/css/twelve' }
           ]
         }
       ],
@@ -267,7 +269,7 @@ export default {
             { text: 'ts中的高级类型', link: '/notes/ts/advancedType' },
             { text: 'ts装饰器', link: '/notes/ts/decorator' },
             { text: 'ts命名空间和模块', link: '/notes/ts/namespace' },
-            { text: 'ts在react项目中的应用', link: '/notes/ts/reactTs.html' }
+            { text: 'ts在react项目中的应用', link: '/notes/ts/reactTs' }
           ]
         }
       ],
