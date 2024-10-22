@@ -168,6 +168,31 @@ export default {
         ]
       },
       {
+        text: 'Git',
+        ariaLabel: 'Git',
+        items: [
+          { text: 'git中的fork、clone、branch和区别', link: '/notes/git/difference' },
+          { text: 'git常用命令', link: '/notes/git/command' },
+          { text: 'git pull 和 git fetch', link: '/notes/git/pullAndFetch' }
+        ]
+      },
+      {
+        text: 'Webpack',
+        ariaLabel: 'Webpack',
+        items: [
+          { text: 'webpack基础介绍', link: '/notes/webpack/basic' },
+          { text: 'webpack构建流程', link: '/notes/webpack/construct' },
+          { text: 'webpack中的loader', link: '/notes/webpack/loader' },
+          { text: 'webpack中的plugin', link: '/notes/webpack/plugin' },
+          { text: 'loader和plugin的区别和编写', link: '/notes/webpack/compile' },
+          { text: 'webpack的热更新和原理', link: '/notes/webpack/replaceMent' },
+          { text: 'webpack中的proxy的工作原理', link: '/notes/webpack/proxy' },
+          { text: 'webpack如何优化前端性能', link: '/notes/webpack/optimize' },
+          { text: '提高webpack构建速度', link: '/notes/webpack/constructSpeed' },
+          { text: '与webpack类似的工具', link: '/notes/webpack/modules' }
+        ]
+      },
+      {
         text: '框架',
         items: [
           {
@@ -373,6 +398,35 @@ export default {
             { text: 'React项目中捕获错误', link: '/notes/react/captureError.md' },
             { text: 'React服务器端渲染', link: '/notes/react/ssr' },
             { text: '使用React过程中遇到的问题', link: '/notes/react/questionSum' }
+          ]
+        }
+      ],
+      '/notes/git/': [
+        {
+          text: 'Git',
+          ariaLabel: 'Git',
+          items: [
+            { text: 'git中的fork、clone、branch和区别', link: '/notes/git/difference' },
+            { text: 'git常用命令', link: '/notes/git/command' },
+            { text: 'git pull 和 git fetch', link: '/notes/git/pullAndFetch' }
+          ]
+        }
+      ],
+      '/notes/webpack/': [
+        {
+          text: 'Webpack',
+          ariaLabel: 'Webpack',
+          items: [
+            { text: 'webpack基础介绍', link: '/notes/webpack/basic' },
+            { text: 'webpack构建流程', link: '/notes/webpack/construct' },
+            { text: 'webpack中的loader', link: '/notes/webpack/loader' },
+            { text: 'webpack中的plugin', link: '/notes/webpack/plugin' },
+            { text: 'loader和plugin的区别和编写', link: '/notes/webpack/compile' },
+            { text: 'webpack的热更新和原理', link: '/notes/webpack/replaceMent' },
+            { text: 'webpack中的proxy的工作原理', link: '/notes/webpack/proxy' },
+            { text: 'webpack如何优化前端性能', link: '/notes/webpack/optimize' },
+            { text: '提高webpack构建速度', link: '/notes/webpack/constructSpeed' },
+            { text: '与webpack类似的工具', link: '/notes/webpack/modules' }
           ]
         }
       ]
