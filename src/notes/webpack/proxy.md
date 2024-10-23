@@ -53,7 +53,7 @@ proxy 工作原理实质上是利用 http-proxy-middleware 这个 http 代理中
 
 举个例子：
 
-在开发阶段，本地地址为 http://localhost:3000，该浏览器发送一个前缀带有/api 标识的请求到服务端获取数据，但响应这个请求的服务器只是将请求转发到另一台服务器中
+在开发阶段，本地地址为 `http://localhost:3000`，该浏览器发送一个前缀带有/api 标识的请求到服务端获取数据，但响应这个请求的服务器只是将请求转发到另一台服务器中
 
 ```js
 const express = require('express')

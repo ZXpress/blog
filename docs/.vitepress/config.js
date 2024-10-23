@@ -72,7 +72,9 @@ export default {
           { text: '定时器最小执行时间', link: '/notes/js/executionTime' },
           { text: 'promise异步', link: '/notes/js/promise' },
           { text: 'symbol数据类型', link: '/notes/js/symbol' },
-          { text: '数组扁平化', link: '/notes/js/flat' }
+          { text: '数组扁平化', link: '/notes/js/flat' },
+          { text: 'ES6数组新增方法', link: '/notes/js/arrayExtend' },
+          { text: 'ES6对象新增方法', link: '/notes/js/objExtend' }
         ]
       },
       {
@@ -276,7 +278,9 @@ export default {
             { text: '定时器最小执行时间', link: '/notes/js/executionTime' },
             { text: 'promise异步', link: '/notes/js/promise' },
             { text: 'symbol数据类型', link: '/notes/js/symbol' },
-            { text: '数组扁平化', link: '/notes/js/flat' }
+            { text: '数组扁平化', link: '/notes/js/flat' },
+            { text: 'ES6数组新增方法', link: '/notes/js/arrayExtend' },
+            { text: 'ES6对象新增方法', link: '/notes/js/objExtend' }
           ]
         }
       ],
