@@ -198,3 +198,97 @@ const p = Promise.race([p1, p2, p3])
 该方法接受一组 Promise 实例作为参数，包装成一个新的 Promise 实例返回，只要参数实例有一个变成 fulfilled 状态，包装实例就会变成 fulfilled 状态；如果所有参数实例都变成 rejected 状态，包装实例就会变成 rejected 状态
 
 Promise.any()跟 Promise.race()方法很像，只有一点不同，就是 Promise.any()不会因为某个 Promise 变成 rejected 状态而结束，必须等到所有参数 Promise 变成 rejected 状态才会结束
+
+## 使用场景 [](#使用场景)
+
+将图片的加载写成一个 Promise，一旦加载完成，Promise 的状态就发生变化
+
+```js
+const preloadImage = function (path) {
+  return new Promise(function (resolve, reject) {
+    const image = new Image()
+    image.onload = resolve
+    image.onerror = reject
+    image.src = path
+  })
+}
+```
+
+通过链式操作，将多个渲染数据分别给个 then，让其各司其职。或当下个异步请求依赖上个请求结果的时候，我们也能够通过链式操作友好解决问题
+
+```js
+// 各司其职
+getInfo()
+  .then((res) => {
+    let { bannerList } = res
+    //渲染轮播图
+    console.log(bannerList)
+    return res
+  })
+  .then((res) => {
+    let { storeList } = res
+    //渲染店铺列表
+    console.log(storeList)
+    return res
+  })
+  .then((res) => {
+    let { categoryList } = res
+    console.log(categoryList)
+    //渲染分类列表
+    return res
+  })
+```
+
+通过 all()实现多个请求合并在一起，汇总所有请求结果，只需设置一个 loading 即可
+
+```js
+function initLoad() {
+  // loading.show() //加载loading
+  Promise.all([getBannerList(), getStoreList(), getCategoryList()])
+    .then((res) => {
+      console.log(res)
+      loading.hide() //关闭loading
+    })
+    .catch((err) => {
+      console.log(err)
+      loading.hide() //关闭loading
+    })
+}
+//数据初始化
+initLoad()
+```
+
+通过 race 可以设置图片请求超时
+
+```js
+//请求某个图片资源
+function requestImg() {
+  var p = new Promise(function (resolve, reject) {
+    var img = new Image()
+    img.onload = function () {
+      resolve(img)
+    }
+    //img.src = "https://b-gold-cdn.xitu.io/v3/static/img/logo.a7995ad.svg"; 正确的
+    img.src = 'https://b-gold-cdn.xitu.io/v3/static/img/logo.a7995ad.svg1'
+  })
+  return p
+}
+
+//延时函数，用于给请求计时
+function timeout() {
+  var p = new Promise(function (resolve, reject) {
+    setTimeout(function () {
+      reject('图片请求超时')
+    }, 5000)
+  })
+  return p
+}
+
+Promise.race([requestImg(), timeout()])
+  .then(function (results) {
+    console.log(results)
+  })
+  .catch(function (reason) {
+    console.log(reason)
+  })
+```

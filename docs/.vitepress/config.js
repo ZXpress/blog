@@ -74,7 +74,13 @@ export default {
           { text: 'symbol数据类型', link: '/notes/js/symbol' },
           { text: '数组扁平化', link: '/notes/js/flat' },
           { text: 'ES6数组新增方法', link: '/notes/js/arrayExtend' },
-          { text: 'ES6对象新增方法', link: '/notes/js/objExtend' }
+          { text: 'ES6对象新增扩展', link: '/notes/js/objExtend' },
+          { text: 'ES6函数新增扩展', link: '/notes/js/funcExtend' },
+          { text: 'ES6新增的Set、Map', link: '/notes/js/setMap' },
+          { text: 'ES6中的Generator函数', link: '/notes/js/generator' },
+          { text: 'ES6中的proxy', link: '/notes/js/proxy' },
+          { text: 'ES6中的module模块', link: '/notes/js/module' },
+          { text: 'ES6中的装饰器', link: '/notes/js/decorator' }
         ]
       },
       {
@@ -118,7 +124,6 @@ export default {
           { text: 'v-if和v-for为什么不建议放在一起', link: '/notes/vue/vIfVFor' },
           { text: 'Vue生命周期', link: '/notes/vue/lifeCycle' },
           { text: 'Vue2中给对象添加新属性页面不刷新原因', link: '/notes/vue/objProperty' },
-          { text: 'ES6 proxy', link: '/notes/vue/proxy' },
           { text: 'Vue组件和插件', link: '/notes/vue/componentPlugin' },
           { text: '组件间通信方式', link: '/notes/vue/communication' },
           { text: 'Vue数据双向绑定原理', link: '/notes/vue/binding' },
@@ -132,7 +137,8 @@ export default {
           { text: 'Vue项目目录结构划分', link: '/notes/vue/directoryStructure' },
           { text: '权限管理', link: '/notes/vue/permission' },
           { text: 'Vue跨域代理', link: '/notes/vue/crossDomain' },
-          { text: 'Vue服务器端渲染', link: '/notes/vue/ssr' }
+          { text: 'Vue服务器端渲染', link: '/notes/vue/ssr' },
+          { text: 'vue3的设计目标和优化', link: '/notes/vue/vue3optimize' }
         ]
       },
       {
@@ -280,7 +286,13 @@ export default {
             { text: 'symbol数据类型', link: '/notes/js/symbol' },
             { text: '数组扁平化', link: '/notes/js/flat' },
             { text: 'ES6数组新增方法', link: '/notes/js/arrayExtend' },
-            { text: 'ES6对象新增方法', link: '/notes/js/objExtend' }
+            { text: 'ES6对象新增扩展', link: '/notes/js/objExtend' },
+            { text: 'ES6函数新增扩展', link: '/notes/js/funcExtend' },
+            { text: 'ES6新增的Set、Map', link: '/notes/js/setMap' },
+            { text: 'ES6中的Generator函数', link: '/notes/js/generator' },
+            { text: 'ES6中的proxy', link: '/notes/js/proxy' },
+            { text: 'ES6中的module模块', link: '/notes/js/module' },
+            { text: 'ES6中的装饰器', link: '/notes/js/decorator' }
           ]
         }
       ],
@@ -334,7 +346,6 @@ export default {
             { text: 'v-if和v-for为什么不建议放在一起', link: '/notes/vue/vIfVFor' },
             { text: 'Vue生命周期', link: '/notes/vue/lifeCycle' },
             { text: 'Vue2中给对象添加新属性页面不刷新原因', link: '/notes/vue/objProperty' },
-            { text: 'ES6 proxy', link: '/notes/vue/proxy' },
             { text: 'Vue组件和插件', link: '/notes/vue/componentPlugin' },
             { text: '组件间通信方式', link: '/notes/vue/communication' },
             { text: 'Vue数据双向绑定原理', link: '/notes/vue/binding' },
@@ -348,7 +359,8 @@ export default {
             { text: 'Vue项目目录结构划分', link: '/notes/vue/directoryStructure' },
             { text: '权限管理', link: '/notes/vue/permission' },
             { text: 'Vue跨域代理', link: '/notes/vue/crossDomain' },
-            { text: 'Vue服务器端渲染', link: '/notes/vue/ssr' }
+            { text: 'Vue服务器端渲染', link: '/notes/vue/ssr' },
+            { text: 'vue3的设计目标和优化', link: '/notes/vue/vue3optimize' }
           ]
         }
       ],
