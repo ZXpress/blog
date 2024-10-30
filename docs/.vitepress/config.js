@@ -32,7 +32,9 @@ export default {
           { text: 'CSS三角形', link: '/notes/css/triangle' },
           { text: 'less对比sass', link: '/notes/css/lessOrSass' },
           { text: 'slotted伪类选择器', link: '/notes/css/slotted' },
-          { text: 'chrome支持字体小于12px方法', link: '/notes/css/twelve' }
+          { text: 'chrome支持字体小于12px方法', link: '/notes/css/twelve' },
+          { text: 'css变量的使用', link: '/notes/css/variable' },
+          { text: 'localStorage和sessionStorage的区别', link: '/notes/css/storage' }
         ]
       },
       {
@@ -80,7 +82,9 @@ export default {
           { text: 'ES6中的Generator函数', link: '/notes/js/generator' },
           { text: 'ES6中的proxy', link: '/notes/js/proxy' },
           { text: 'ES6中的module模块', link: '/notes/js/module' },
-          { text: 'ES6中的装饰器', link: '/notes/js/decorator' }
+          { text: 'ES6中的装饰器', link: '/notes/js/decorator' },
+          { text: '浏览器中cookie有哪些字段', link: '/notes/js/cookie' },
+          { text: 'addeventlistener的第三个参数', link: '/notes/js/addeventlistener' }
         ]
       },
       {
@@ -138,7 +142,12 @@ export default {
           { text: '权限管理', link: '/notes/vue/permission' },
           { text: 'Vue跨域代理', link: '/notes/vue/crossDomain' },
           { text: 'Vue服务器端渲染', link: '/notes/vue/ssr' },
-          { text: 'vue3的设计目标和优化', link: '/notes/vue/vue3optimize' }
+          { text: 'vue3的设计目标和优化', link: '/notes/vue/vue3optimize' },
+          { text: 'vue3性能优化方面', link: '/notes/vue/performance' },
+          { text: 'vue3为什么要用proxy API替代defineProperty API', link: '/notes/vue/vue3Proxy' },
+          { text: 'vue3的Composition API和vue2的Options API的不同', link: '/notes/vue/composition' },
+          { text: 'vue3中treeShaking的特性', link: '/notes/vue/treeShaking' },
+          { text: 'vue3内置组件teleport', link: '/notes/vue/teleport' }
         ]
       },
       {
@@ -243,7 +252,9 @@ export default {
             { text: 'CSS三角形', link: '/notes/css/triangle' },
             { text: 'less对比sass', link: '/notes/css/lessOrSass' },
             { text: 'slotted伪类选择器', link: '/notes/css/slotted' },
-            { text: 'chrome支持字体小于12px方法', link: '/notes/css/twelve' }
+            { text: 'chrome支持字体小于12px方法', link: '/notes/css/twelve' },
+            { text: 'css变量的使用', link: '/notes/css/variable' },
+            { text: 'localStorage和sessionStorage的区别', link: '/notes/css/storage' }
           ]
         }
       ],
@@ -292,7 +303,9 @@ export default {
             { text: 'ES6中的Generator函数', link: '/notes/js/generator' },
             { text: 'ES6中的proxy', link: '/notes/js/proxy' },
             { text: 'ES6中的module模块', link: '/notes/js/module' },
-            { text: 'ES6中的装饰器', link: '/notes/js/decorator' }
+            { text: 'ES6中的装饰器', link: '/notes/js/decorator' },
+            { text: '浏览器中cookie有哪些字段', link: '/notes/js/cookie' },
+            { text: 'addeventlistener的第三个参数', link: '/notes/js/addeventlistener' }
           ]
         }
       ],
@@ -360,7 +373,12 @@ export default {
             { text: '权限管理', link: '/notes/vue/permission' },
             { text: 'Vue跨域代理', link: '/notes/vue/crossDomain' },
             { text: 'Vue服务器端渲染', link: '/notes/vue/ssr' },
-            { text: 'vue3的设计目标和优化', link: '/notes/vue/vue3optimize' }
+            { text: 'vue3的设计目标和优化', link: '/notes/vue/vue3optimize' },
+            { text: 'vue3性能优化方面', link: '/notes/vue/performance' },
+            { text: 'vue3为什么要用proxy API替代defineProperty API', link: '/notes/vue/vue3Proxy' },
+            { text: 'vue3的Composition API和vue2的Options API的不同', link: '/notes/vue/composition' },
+            { text: 'vue3中treeShaking的特性', link: '/notes/vue/treeShaking' },
+            { text: 'vue3内置组件teleport', link: '/notes/vue/teleport' }
           ]
         }
       ],
