@@ -26,6 +26,13 @@ Array.from([1, 2, 3], (x) => x * x)
 // [1, 4, 9]
 ```
 
+类似的把类数组转换为数组的方法还有：
+
+```js
+Array.apply(null, arrayLike)
+Array.prototype.concat.apply([], arrayLike)
+```
+
 ### Array.of()
 
 用于将一组值，转换为数组

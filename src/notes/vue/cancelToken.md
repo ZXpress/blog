@@ -1,6 +1,6 @@
-# axios 取消请求 [](#cancelToken)
+# 取消请求 [](#cancelToken)
 
-CancelToken 两种方式
+## axios 的 CancelToken 两种使用方式 [](#axios-的-canceltoken-两种使用方式)
 
 ```js
 // 方式一
@@ -23,4 +23,27 @@ axios.get('xxxx', {
   })
 })
 cancel('主动取消请求')
+```
+
+## fetch 使用 AbortController [](#fetch使用abortcontroller)
+
+```js
+const controller = new AbortController()
+const signal = controller.signal
+fetch('https://somewhere', { signal })
+controller.abort()
+```
+
+## xhr 使用 xhr.abort() [](#xhr使用xhrabort)
+
+```js
+const xhr = new XMLHttpRequest(),
+const method = 'GET',
+const url = 'https://developer.mozilla.org/'
+xhr.open(method, url, true)
+
+xhr.send()
+
+// 取消发送请求
+xhr.abort()
 ```

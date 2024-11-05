@@ -2,6 +2,8 @@
 
 - JSONP：通过 script 标签的 src 属性请求跨域的数据接口，并通过函数调用的形式接收响应回来的数据，只支持 get 请求
 
+原理：动态创建 script，使用 script.src 加载请求跨过跨域
+
 <img src="../../public//js/domain.png" />
 
 - cors：跨域资源共享：服务端需要在 HTTP 响应头中添加 Access-Control-Allow-Origin

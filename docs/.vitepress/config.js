@@ -84,7 +84,12 @@ export default {
           { text: 'ES6中的module模块', link: '/notes/js/module' },
           { text: 'ES6中的装饰器', link: '/notes/js/decorator' },
           { text: '浏览器中cookie有哪些字段', link: '/notes/js/cookie' },
-          { text: 'addeventlistener的第三个参数', link: '/notes/js/addeventlistener' }
+          { text: 'addeventlistener的第三个参数', link: '/notes/js/addeventlistener' },
+          { text: 'e.target和e.currentTarget的区别', link: '/notes/js/currentTarget' },
+          { text: 'input事件和change事件的区别', link: '/notes/js/onChange' },
+          { text: '复制粘贴和剪切板clipBoard API', link: '/notes/js/clipBoard' },
+          { text: '可选链操作符?.', link: '/notes/js/chain' },
+          { text: '二进制文件转换方法', link: '/notes/js/binaryFile' }
         ]
       },
       {
@@ -147,7 +152,8 @@ export default {
           { text: 'vue3为什么要用proxy API替代defineProperty API', link: '/notes/vue/vue3Proxy' },
           { text: 'vue3的Composition API和vue2的Options API的不同', link: '/notes/vue/composition' },
           { text: 'vue3中treeShaking的特性', link: '/notes/vue/treeShaking' },
-          { text: 'vue3内置组件teleport', link: '/notes/vue/teleport' }
+          { text: 'vue3内置组件teleport', link: '/notes/vue/teleport' },
+          { text: 'vue使用xlsx、xlsx-style导出带样式的excel', link: '/notes/vue/xlsx' }
         ]
       },
       {
@@ -305,7 +311,12 @@ export default {
             { text: 'ES6中的module模块', link: '/notes/js/module' },
             { text: 'ES6中的装饰器', link: '/notes/js/decorator' },
             { text: '浏览器中cookie有哪些字段', link: '/notes/js/cookie' },
-            { text: 'addeventlistener的第三个参数', link: '/notes/js/addeventlistener' }
+            { text: 'addeventlistener的第三个参数', link: '/notes/js/addeventlistener' },
+            { text: 'e.target和e.currentTarget的区别', link: '/notes/js/currentTarget' },
+            { text: 'input事件和change事件的区别', link: '/notes/js/onChange' },
+            { text: '复制粘贴和剪切板clipBoard API', link: '/notes/js/clipBoard' },
+            { text: '可选链操作符?.', link: '/notes/js/chain' },
+            { text: '二进制文件转换方法', link: '/notes/js/binaryFile' }
           ]
         }
       ],
@@ -378,7 +389,8 @@ export default {
             { text: 'vue3为什么要用proxy API替代defineProperty API', link: '/notes/vue/vue3Proxy' },
             { text: 'vue3的Composition API和vue2的Options API的不同', link: '/notes/vue/composition' },
             { text: 'vue3中treeShaking的特性', link: '/notes/vue/treeShaking' },
-            { text: 'vue3内置组件teleport', link: '/notes/vue/teleport' }
+            { text: 'vue3内置组件teleport', link: '/notes/vue/teleport' },
+            { text: 'vue使用xlsx、xlsx-style导出带样式的excel', link: '/notes/vue/xlsx' }
           ]
         }
       ],
