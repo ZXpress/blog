@@ -216,6 +216,11 @@ export default {
         ]
       },
       {
+        text: '其他',
+        ariaLabel: '其他',
+        items: [{ text: '前端开发规范', link: '/notes/other/standard' }]
+      },
+      {
         text: '框架',
         items: [
           {
@@ -474,6 +479,13 @@ export default {
             { text: '提高webpack构建速度', link: '/notes/webpack/constructSpeed' },
             { text: '与webpack类似的工具', link: '/notes/webpack/modules' }
           ]
+        }
+      ],
+      '/notes/other': [
+        {
+          text: '其他',
+          ariaLabel: '其他',
+          items: [{ text: '前端开发规范', link: '/notes/other/standard' }]
         }
       ]
     }
