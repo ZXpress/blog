@@ -1355,3 +1355,289 @@ function getUserInfo(id) {}
 ## 命名规则
 
 ### 布尔值命名
+
+布尔值是两种逻辑状态的变量真和假，对应 true 和 false，也可以用数字 1 和 0 表示真假，推荐命名方式为 is + 动词（现在进行时）/ 形容词，但是有些场景下也可以不用写 is 开头
+
+- 场景：可见性/进行中
+
+```json
+{
+  "isShow": "是否显示",
+  "isVisible": "是否可见",
+  "isLoading": "是否处于加载中",
+  "isConnecting": "是否处于连接中",
+  "isValidating": "正在验证中",
+  "isDoing": "正在进行中",
+  "isRunning": "正在运行中",
+  "isListening": "正在监听中"
+}
+```
+
+- 场景：属性/状态
+
+```json
+{
+  "isDisabled": "是否禁用",
+  "isEdit": "是否可编辑",
+  "isAdd": "是否可增加",
+  "isUpdate": "是否可修改",
+  "isRemove": "是否可删除",
+  "isClearable": "是否可清空",
+  "isReadonly": "是否只读",
+  "isExpand": "是否可展开",
+  "isShrink": "是否可收缩",
+  "isChecked": "是否选中",
+  "isClick": "是否可点击",
+  "isDrag": "是否可拖拽",
+  "isOpen": "是否打开",
+  "isClose": "是否打开",
+  "isChoice": "是否选择（复选框，单选框）",
+  "isSelect": "是否选择（下拉框，列表）",
+  "isConfig": "是否可配置"
+}
+```
+
+- 场景：弹框显示/隐藏
+
+```json
+{
+  // 组合1-基础表单
+  "addModal": "新增弹框",
+  "editModal": "编辑弹框",
+  "detailModal": "详情弹框",
+
+  // 组合2-业务相关
+  "syncDataModal": "同步数据弹框",
+  "addUserModal": "新增用户弹框",
+  "userInfoModal": "用户信息弹框",
+  "assignPermissionModal": "分配权限弹框",
+  "departTreeModal": "部门树弹框"
+}
+```
+
+### 数组变量命名
+
+数组主要有复数形式和 xxxList 形式，简单的区别是复数形式的适合前端本身声明的数组，xxxList 形式的适合后台接口返回的数组
+
+```json
+{
+  // 前端声明变量
+  "users": "用户列表",
+  "menus": "菜单列表",
+  "selectNodes": "选中节点列表",
+
+  // 后台返回数据接收变量
+  "userList": "用户列表",
+  "menuList": "菜单列表",
+  "statusList": "状态列表"
+}
+```
+
+### 函数命名
+
+- 场景：绑定事件监听
+
+绑定的事件名采用 kebab-case 命名，字母小写，以短横分隔单词。因为在 Dom 模板中的事件监听，由于 HTML 中是不区分大小写的，Vue 会自动转换事件监听为全小写，所以推荐 始终使用 kebab-case 的命名
+
+事件的命名采用 动词形式，事件绑定本身就是 v-on 指令，不能写成 v-on:on-close，所以绑定的事件统一都不用 on-xx 的形式
+
+```json
+{
+  // 原生事件监听
+  "input": "输入",
+  "change": "改变",
+  "blur": "失去焦点",
+  "focus": "聚焦",
+  "submit": "提交",
+  "keyup": "提交",
+  "keydown": "提交",
+  "enter": "提交",
+  "submit": "提交",
+
+  // 自定义事件监听
+  "preview": "预览",
+  "clear": "清空",
+  "cancel": "关闭",
+  "open": "打开",
+  "select-change": "选择",
+  "select-all": "选择所有",
+  "selection-change": "选项改变",
+  "sort-change": "排序",
+  "row-click": "单击行",
+  "row-dblclick": "双击行"
+}
+```
+
+在声明 事件监听函数 或者声明 props 绑定函数 的时候有些是需要用 onXxx 的形式，有些则可以不带 on，具体要看当前环境中的作用和语义
+
+```js
+// 组合1
+function onInput() {}
+function onPreview() {}
+function onSelectAll() {}
+function onRowClick() {}
+function onSelectionChange() {}
+
+// 组合2
+function beforeUpload() {}
+function beforeOpen() {}
+function beforeClose() {}
+```
+
+- 场景：自定义事件
+
+自定义事件名使用 camelCase 驼峰命名，命名为动词+名词形式
+名称不能过长，要明确表达此事件处理的作用，避免望文不知义
+可以参考 JavaScript 规范中 函数命名 章节，使用常用的动词来命名
+
+一般由页面直接或者间接发起的操作，用 handleXxx 的形式
+
+```js
+function handleSearch() {}
+function handleReset() {}
+function handleResize() {}
+```
+
+由方法发起调用的操作，用动词开头的形式，命名看方法的用途决定
+
+```js
+function resetQuery() {}
+function resetForm() {}
+function resetSelect() {}
+```
+
+- 场景：异步处理方法 在了解过接口命名规则之后，前端页面中使用 Api 接口的异步事件，这些一般比较固定，以下组合列举出了一些场景
+
+```js
+// 组合1
+// 查询的是后台返回的列表，推荐是用 queryXxxList 这种形式
+function queryList() {}
+function queryMenuList() {}
+function queryUserList() {}
+function queryDetail() {}
+
+// 组合2
+// 查询的是后台返回的数据信息，详情等，推荐用 queryXxx+Data/Info/Detail 这种形式
+function queryProcessData() {}
+function queryStepInfo() {}
+function queryTaskDetail() {}
+
+// 组合3
+// 页面增删查改的操作，用 handleXxx 的形式
+function handleAdd() {}
+function handleEdit() {}
+function handleDelete() {}
+function handleSubmit() {}
+```
+
+- 场景：路由页面跳转
+
+路由页面的跳转一般只有 goXxx 和 toXxx 两种，两者使用差别不大，只在少部分页面跳转上有语义的差别
+比如 去首页，返回上级 这种表示只跳到这些页面就结束行为的用 goXxx 比较合适
+比如 跳转到详情页面，跳转到审批页面 这种表示跳到有数据信息的页面，并且可能带传参的用 toXxx 比较合适
+
+```json
+{
+  // 组合1
+  "goHome": "去首页",
+  "goBack": "返回页面",
+  "goMailBox": "去邮箱",
+
+  // 组合2
+  "toUserDetail": "跳转到用户详情",
+  "toApprove": "跳转到审批页面",
+
+  // 组合3
+  "navigateToHome": "导航到首页",
+  "redirectToLogin": "重定向到登录页",
+  "switchHome": "切换到首页",
+  "switchOrder": "切换到订单页"
+}
+```
+
+- 场景：数据的加工
+
+针对数据在不同场景下的转换处理操作，比如格式化，排序，过滤，转换，切换，比较，去除空格，添加，区间，相差等等
+
+```json
+{
+  // 组合1
+  "formatThousand": "格式化数字千分位",
+  "formatRmbChinese": "格式化人民币金额大写",
+  "formatStartOfName": "格式化姓名中间为星号",
+
+  // 组合2
+  "sortUserList": "用户列表排序",
+  "sortOrder": "订单排序",
+  "sortByName": "根据名称排序",
+
+  // 组合3
+  "filterUser": "过滤用户",
+  "filterByName": "通过名称过滤",
+
+  // 组合4
+  "convertCurrency": "转换货币单位",
+  "convertAmount": "转换金额",
+
+  // 组合5
+  "toggleClass": "切换演示",
+
+  // 组合6
+  "compareDate": "比较日期",
+  "compareAge": "比较年龄大小",
+
+  // 组合7
+  "trimStart": "去除字符串开始位置的空格",
+  "trimEnd": "去除字符串结束位置的空格",
+  "trimAll": "去除字符串中全部的空格",
+
+  // 组合8
+  "addDate": "日期加天",
+  "addMonth": "日期加月",
+  "addYear": "日期加年",
+
+  // 组合8
+  "diffDay": "相差的天数",
+  "diffWeek": "相差的周数",
+  "diffMonth": "相差的月数"
+}
+```
+
+## 模板中监听事件的简写
+
+在模板中，如果事件监听的方法不需要传参，则需要省略括号
+
+正例：
+
+```vue
+<template>
+  <el-button type="primary" @click="handleAdd" />
+  <el-button type="primary" @click="handleDelete(1)" />
+</template>
+```
+
+反例：
+
+```vue
+<template>
+  <el-button type="primary" @click="handleAdd()" />
+  <el-button type="primary" @click="handleOpen()" />
+</template>
+```
+
+## vue-router 路由传参
+
+使用$router 的 query 传参，不使用 params，这样参数会在地址栏中不会刷新消失
+
+```js
+// 跳转路由
+this.$router.push({
+  path: 'home',
+  query: {
+    id: 1
+  }
+})
+
+// 在 home/index.vue 中接收参数
+let id = this.$route.query.id
+```
