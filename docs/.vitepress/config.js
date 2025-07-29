@@ -153,7 +153,8 @@ export default {
           { text: 'vue3的Composition API和vue2的Options API的不同', link: '/notes/vue/composition' },
           { text: 'vue3中treeShaking的特性', link: '/notes/vue/treeShaking' },
           { text: 'vue3内置组件teleport', link: '/notes/vue/teleport' },
-          { text: 'vue使用xlsx、xlsx-style导出带样式的excel', link: '/notes/vue/xlsx' }
+          { text: 'vue使用xlsx、xlsx-style导出带样式的excel', link: '/notes/vue/xlsx' },
+          { text: 'vue3依赖注入Provie', link: '/notes/vue/vue3Provide' }
         ]
       },
       {
@@ -395,7 +396,8 @@ export default {
             { text: 'vue3的Composition API和vue2的Options API的不同', link: '/notes/vue/composition' },
             { text: 'vue3中treeShaking的特性', link: '/notes/vue/treeShaking' },
             { text: 'vue3内置组件teleport', link: '/notes/vue/teleport' },
-            { text: 'vue使用xlsx、xlsx-style导出带样式的excel', link: '/notes/vue/xlsx' }
+            { text: 'vue使用xlsx、xlsx-style导出带样式的excel', link: '/notes/vue/xlsx' },
+            { text: 'vue3依赖注入Provie', link: '/notes/vue/vue3Provide' }
           ]
         }
       ],
