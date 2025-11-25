@@ -336,7 +336,7 @@ vue2 中绑定的钩子函数为
 vue3 中
 
 - bind → beforeMount
-- inserted → mounted
+- inserted → mounted (vue3 中使用的 mounted)
 - beforeUpdate：新的！这是在元素本身更新之前调用的，很像组件生命周期钩子。
 - componentUpdated → updated
 - beforeUnmount：新的！与组件生命周期钩子类似，它将在卸载元素之前调用。

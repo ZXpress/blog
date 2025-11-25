@@ -89,7 +89,9 @@ export default {
           { text: 'input事件和change事件的区别', link: '/notes/js/onChange' },
           { text: '复制粘贴和剪切板clipBoard API', link: '/notes/js/clipBoard' },
           { text: '可选链操作符?.', link: '/notes/js/chain' },
-          { text: '二进制文件转换方法', link: '/notes/js/binaryFile' }
+          { text: '二进制文件转换方法', link: '/notes/js/binaryFile' },
+          { text: 'obj.hasOwnProperty', link: '/notes/js/hasOwnProperty' },
+          { text: '变量提升和函数提升', link: '/notes/js/variableRaise' }
         ]
       },
       {
@@ -322,7 +324,9 @@ export default {
             { text: 'input事件和change事件的区别', link: '/notes/js/onChange' },
             { text: '复制粘贴和剪切板clipBoard API', link: '/notes/js/clipBoard' },
             { text: '可选链操作符?.', link: '/notes/js/chain' },
-            { text: '二进制文件转换方法', link: '/notes/js/binaryFile' }
+            { text: '二进制文件转换方法', link: '/notes/js/binaryFile' },
+            { text: 'obj.hasOwnProperty', link: '/notes/js/hasOwnProperty' },
+            { text: '变量提升和函数提升', link: '/notes/js/variableRaise' }
           ]
         }
       ],
